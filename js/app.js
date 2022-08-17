@@ -32,7 +32,7 @@ case 'yes':
   alert('Best ever!');
   break;
 case 'no':
-  alert('You shouldn\t be a critic.');
+  alert('You shouldn\'t be a critic.');
   break;
 default:
   alert('E for effort.');
@@ -60,10 +60,10 @@ case 'yes':
   alert('You know it, and I know it.');
   break;
 case 'no':
-  alert('Wasn\t really asking.');
+  alert('Wasn\'t really asking.');
   break;
 default:
-  alert('Wasn\t really asking.');
+  alert('Wasn\'t really asking.');
 }
 
 let travelCroatia = prompt('Have you ever been to Croatia?');
