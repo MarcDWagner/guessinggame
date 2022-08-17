@@ -1,1 +1,18 @@
 body {background-color: lightblue;}
+
+
+input {
+    background-color: ghostwhite;
+    border: none;
+    color:blue;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: .5s;
+}
+
+button:hover {
+    background-color: darkgrey;
+    color:antiquewhite;
+}
