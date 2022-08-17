@@ -66,4 +66,17 @@ default:
   alert('Wasn\t really asking.');
 }
 
+let travelCroatia = prompt('Have you ever been to Croatia?');
+travelCroatia = travelCroatia.toLowerCase();
+
+switch (travelCroatia) {
+case 'yes':
+  alert('Then you know how beautiful it is too.');
+  break;
+case 'no':
+  alert('I highly recommend it, the water is beautiful.');
+  break;
+default:
+  alert('You should go sometime.');
+}
 
