@@ -81,7 +81,7 @@ console.log('app is running');
 // }
 
 let guessNumber = prompt('What is my favorite number, 1 - 50?');
-let favoriteNumber = 22;
+let favoriteNumber = '22';
 
 for (let i = 1; i < 5; i++) {
   if (guessNumber < favoriteNumber) {
@@ -90,5 +90,10 @@ for (let i = 1; i < 5; i++) {
     alert('Your guess is too high.');
   } else {
     alert('You got it!');
+    break;
   }
+  guessNumber = prompt('What is my favorite number, 1 - 50');
+}
+if (guessNumber !== favoriteNumber) {
+  alert('You guessed too many times.');
 }
