@@ -8,7 +8,7 @@ console.log('app is running');
 // User name
 let user = prompt('What is your name?');
 console.log(user);
-alert('Welcome: ' + user );
+alert('Welcome: ' + user);
 if (user === null) {
   alert('You need to provide your name.');
   user = prompt('No, really what is your name?');
@@ -110,23 +110,25 @@ if (user === null) {
 // Guess States I've lived in
 let statesLivedIn = prompt('Guess a state that I have lived in previously.');
 let answersStatesLivedIn = ['alaska', 'north carolina', 'georgia', 'new york', 'maryland', 'south carolina'];
-
+// Create boolean let statements and add into loop
 for (let i = 0; i < statesLivedIn; i++) {
   let response = prompt(statesLivedIn);
   for (let answer of answersStatesLivedIn[i]) {
-  if (response.toLowerCase() === answer) {
-    alert('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
-    break;
-    } else if (i === 6) {break; }{
-    alert('All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.')
+    if (response.toLowerCase() === answer) {
+      alert('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+      break;
     } else {
-    alert('That is not a state I have lived in.');
+      alert('That is not a state I have lived in.');
     }
-    }
-
-  statesLivedIn = prompt('Guess a state that I have lived in previously.');
-  alert('You have exceeded your guesses, I have previously lived in the following states: Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+    statesLivedIn = prompt('Guess a state that I have lived in previously.');
   }
+  if (i === 6) {
+    alert('You have exceeded your guess, all states I have previously lived in are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+    break;
+}
+
+
+
 // for loop with all questions and answers in array
 // let questions = [
 //   'The Army is the best branch, right?',
