@@ -6,35 +6,12 @@ console.log('app is running');
 // let correctAnswers = 0;
 
 // User name
-// let user = prompt('What is your name?');
-// console.log(user);
-// alert('Welcome: ' + user );
-// if (user === null) {
-//   alert('You need to provide your name.');
-//   user = prompt('No, really what is your name?');
-// }
-// for loop with all questions and answers in array
-let questions = [
-  'The Army is the best branch, right?',
-  'Was Heath Ledger\'s Joker one of the best acting performances ever?',
-  'Is Croatia a great vacation spot?',
-  'Does Arizona have the best lightening storms?',
-  'Are bunnies are the best pet?'
-];
-let answers = [
-  'yes',
-  'yes',
-  'yes',
-  'yes',
-  'yes'
-];
-for (let i = 0; i < questions.length; i++) {
-  let response = prompt(questions[i]);
-  if (response.toLowerCase() === answers[i]) {
-    alert('Got it!');
-  } else {
-    alert('Incorrect.');
-  }if (i === 5) {break; }
+let user = prompt('What is your name?');
+console.log(user);
+alert('Welcome: ' + user );
+if (user === null) {
+  alert('You need to provide your name.');
+  user = prompt('No, really what is your name?');
 }
 
 // // Best military branch question
@@ -130,24 +107,46 @@ for (let i = 0; i < questions.length; i++) {
 // if (guessNumber !== favoriteNumber) {
 //   alert('You guessed too many times. The answer is 22.');
 // }
+// Guess States I've lived in
+let statesLivedIn = prompt('Guess a state that I have lived in previously.');
+let answersStatesLivedIn = ['alaska', 'north carolina', 'georgia', 'new york', 'maryland', 'south carolina'];
 
-// Guess states I've lived in loop
-// let numberOfGuesses = 6;
-// let statesLivedIn = prompt('Guess a state that I have lived in previously.');
-// let answersStatesLivedIn = ['alaska', 'north carolina', 'georgia', 'new york', 'maryland', 'south carolina'];
+for (let i = 0; i < statesLivedIn; i++) {
+  let response = prompt(statesLivedIn);
+  for (let answer of answersStatesLivedIn[i]) {
+  if (response.toLowerCase() === answer) {
+    alert('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+    break;
+    } else if (i === 6) {break; }{
+    alert('All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.')
+    } else {
+    alert('That is not a state I have lived in.');
+    }
+    }
 
-// while(numberOfGuesses > 0) {
-//   for (let i = 0; i < answersStatesLivedIn.length; i++) {
-//     if (statesLivedIn.toLowerCase() === answersStatesLivedIn.toLowerCase()) {
-//       alert('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
-//       break;
-//     } else {
-//       alert('That is not a state I have lived in.');
-//     }
-//     numberOfGuesses --;
-//     statesLivedIn = prompt('Guess a state that I have lived in previously.');
-//     if (numberOfGuesses === 0) {
-//       alert('You have exceeded your guesses, I have previously lived in the following states: Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
-//     }
-//   }
+  statesLivedIn = prompt('Guess a state that I have lived in previously.');
+  alert('You have exceeded your guesses, I have previously lived in the following states: Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+  }
+// for loop with all questions and answers in array
+// let questions = [
+//   'The Army is the best branch, right?',
+//   'Was Heath Ledger\'s Joker one of the best acting performances ever?',
+//   'Is Croatia a great vacation spot?',
+//   'Does Arizona have the best lightening storms?',
+//   'Are bunnies are the best pet?'
+// ];
+// let answers = [
+//   'yes',
+//   'yes',
+//   'yes',
+//   'yes',
+//   'yes'
+// ];
+// for (let i = 0; i < questions.length; i++) {
+//   let response = prompt(questions[i]);
+//   if (response.toLowerCase() === answers[i]) {
+//     alert('Got it!');
+//   } else {
+//     alert('Incorrect.');
+//   }if (i === 5) {break; }
 // }
