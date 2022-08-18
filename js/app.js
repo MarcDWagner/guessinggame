@@ -101,18 +101,18 @@ console.log('app is running');
 
 let statesLivedIn = prompt('Guess a state that I have lived in previously.');
 let answersStatesLivedIn = ['alaska', 'north carolina', 'georgia', 'new york', 'maryland', 'south carolina'];
+answersStatesLivedIn =statesLivedIn.toLowerCase();
 
-
-for (let i = 1; i < answersStatesLivedIn.length; i++) {
-  if (statesLivedIn.toLowerCase() === answersStatesLivedIn) {
+for (let i = 0; i < 6; i++) {
+  if (statesLivedIn === answersStatesLivedIn) {
     alert('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
     break;
   } else {
     alert('That is not a state I have lived in.');
   }
   statesLivedIn = prompt('Guess a state that I have lived in previously.');
-}
-if (statesLivedIn !== answersStatesLivedIn) {
-  alert('You have exceeded your guesses, I have previously lived in the following states: Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+  if (statesLivedIn !== answersStatesLivedIn) {
+    alert('You have exceeded your guesses, I have previously lived in the following states: Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+  }
 }
 
