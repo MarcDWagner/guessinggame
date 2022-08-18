@@ -34,83 +34,83 @@ for (let i = 0; i < questions.length; i++) {
     alert('Got it!');
   } else {
     alert('Incorrect.');
-  }
+  }if (i === 5) {break; }
 }
 
-// Best military branch question
-let bestBranch = prompt('The Army is the best branch, right?');
-bestBranch = bestBranch.toLowerCase();
+// // Best military branch question
+// let bestBranch = prompt('The Army is the best branch, right?');
+// bestBranch = bestBranch.toLowerCase();
 
-switch (bestBranch) {
-case 'yes':
-  alert('You got that right!');
-  break;
-case 'no':
-  alert('At least you tried.');
-  break;
-default:
-  alert('Let me help, of course it is!');
-}
+// switch (bestBranch) {
+// case 'yes':
+//   alert('You got that right!');
+//   break;
+// case 'no':
+//   alert('At least you tried.');
+//   break;
+// default:
+//   alert('Let me help, of course it is!');
+// }
 
-// Favorite actor question
-let amazingActor = prompt('Was Heath Ledger\'s Joker one of the best acting performances ever?');
-amazingActor = amazingActor.toLowerCase();
+// // Favorite actor question
+// let amazingActor = prompt('Was Heath Ledger\'s Joker one of the best acting performances ever?');
+// amazingActor = amazingActor.toLowerCase();
 
-switch (amazingActor) {
-case 'yes':
-  alert('Best ever!');
-  break;
-case 'no':
-  alert('You shouldn\'t be a critic.');
-  break;
-default:
-  alert('E for effort.');
-}
+// switch (amazingActor) {
+// case 'yes':
+//   alert('Best ever!');
+//   break;
+// case 'no':
+//   alert('You shouldn\'t be a critic.');
+//   break;
+// default:
+//   alert('E for effort.');
+// }
 
-// Travel location question
-let travelCroatia = prompt('Have you ever been to Croatia?');
-travelCroatia = travelCroatia.toLowerCase();
+// // Travel location question
+// let travelCroatia = prompt('Have you ever been to Croatia?');
+// travelCroatia = travelCroatia.toLowerCase();
 
-switch (travelCroatia) {
-case 'yes':
-  alert('Then you know how beautiful it is too.');
-  break;
-case 'no':
-  alert('I highly recommend it, the water is beautiful.');
-  break;
-default:
-  alert('You should go sometime.');
-}
+// switch (travelCroatia) {
+// case 'yes':
+//   alert('Then you know how beautiful it is too.');
+//   break;
+// case 'no':
+//   alert('I highly recommend it, the water is beautiful.');
+//   break;
+// default:
+//   alert('You should go sometime.');
+// }
 
-// Arizona lightening question
-let arizonaLightening = prompt('Does Arizona have the best lightening storms?');
-arizonaLightening = arizonaLightening.toLowerCase();
+// // Arizona lightening question
+// let arizonaLightening = prompt('Does Arizona have the best lightening storms?');
+// arizonaLightening = arizonaLightening.toLowerCase();
 
-switch (arizonaLightening) {
-case 'yes':
-  alert('No contest.');
-  break;
-case 'no':
-  alert('Clearly don\'t know what you\'re talking about.');
-  break;
-default:
-  alert('Come on now.');
-}
+// switch (arizonaLightening) {
+// case 'yes':
+//   alert('No contest.');
+//   break;
+// case 'no':
+//   alert('Clearly don\'t know what you\'re talking about.');
+//   break;
+// default:
+//   alert('Come on now.');
+// }
 
-// Best pet question
-let bestPet = prompt('Are bunnies are the best pet?');
-bestPet = bestPet.toLowerCase();
+// // Best pet question
+// let bestPet = prompt('Are bunnies are the best pet?');
+// bestPet = bestPet.toLowerCase();
 
-switch (bestPet) {
-case 'yes':
-  alert('You know it, and I know it.');
-  break;
-case 'no':
-  alert('Wasn\'t really asking.');
-  break;
-default:
-  alert('Wasn\'t really asking.');
-}
+// switch (bestPet) {
+// case 'yes':
+//   alert('You know it, and I know it.');
+//   break;
+// case 'no':
+//   alert('Wasn\'t really asking.');
+//   break;
+// default:
+//   alert('Wasn\'t really asking.');
+// }
 
 // Guess my favorite number loop
 // let guessNumber = prompt('What is my favorite number, 1 - 50?');
