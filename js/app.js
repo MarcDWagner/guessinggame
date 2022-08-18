@@ -109,22 +109,22 @@ console.log('app is running');
 // }
 
 // Guess states I've lived in loop
-let numberOfGuesses = 6;
-let statesLivedIn = prompt('Guess a state that I have lived in previously.');
-let answersStatesLivedIn = ['alaska', 'north carolina', 'georgia', 'new york', 'maryland', 'south carolina'];
+// let numberOfGuesses = 6;
+// let statesLivedIn = prompt('Guess a state that I have lived in previously.');
+// let answersStatesLivedIn = ['alaska', 'north carolina', 'georgia', 'new york', 'maryland', 'south carolina'];
 
-while(numberOfGuesses > 0) {
-  for (let i = 0; i < answersStatesLivedIn.length; i++) {
-    if (statesLivedIn.toLowerCase() === answersStatesLivedIn.toLowerCase()) {
-      alert('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
-      break;
-    } else {
-      alert('That is not a state I have lived in.');
-    }
-    numberOfGuesses --;
-    statesLivedIn = prompt('Guess a state that I have lived in previously.');
-    if (numberOfGuesses === 0) {
-      alert('You have exceeded your guesses, I have previously lived in the following states: Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
-    }
-  }
-}
+// while(numberOfGuesses > 0) {
+//   for (let i = 0; i < answersStatesLivedIn.length; i++) {
+//     if (statesLivedIn.toLowerCase() === answersStatesLivedIn.toLowerCase()) {
+//       alert('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+//       break;
+//     } else {
+//       alert('That is not a state I have lived in.');
+//     }
+//     numberOfGuesses --;
+//     statesLivedIn = prompt('Guess a state that I have lived in previously.');
+//     if (numberOfGuesses === 0) {
+//       alert('You have exceeded your guesses, I have previously lived in the following states: Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+//     }
+//   }
+// }
