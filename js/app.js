@@ -38,6 +38,20 @@ console.log('app is running');
 //   alert('E for effort.');
 // }
 
+// let travelCroatia = prompt('Have you ever been to Croatia?');
+// travelCroatia = travelCroatia.toLowerCase();
+
+// switch (travelCroatia) {
+// case 'yes':
+//   alert('Then you know how beautiful it is too.');
+//   break;
+// case 'no':
+//   alert('I highly recommend it, the water is beautiful.');
+//   break;
+// default:
+//   alert('You should go sometime.');
+// }
+
 // let arizonaLightening = prompt('Does Arizona have the best lightening storms?');
 // arizonaLightening = arizonaLightening.toLowerCase();
 
@@ -66,34 +80,39 @@ console.log('app is running');
 //   alert('Wasn\'t really asking.');
 // }
 
-// let travelCroatia = prompt('Have you ever been to Croatia?');
-// travelCroatia = travelCroatia.toLowerCase();
 
-// switch (travelCroatia) {
-// case 'yes':
-//   alert('Then you know how beautiful it is too.');
-//   break;
-// case 'no':
-//   alert('I highly recommend it, the water is beautiful.');
-//   break;
-// default:
-//   alert('You should go sometime.');
+// let guessNumber = prompt('What is my favorite number, 1 - 50?');
+// let favoriteNumber = '22';
+
+// for (let i = 1; i < 4; i++) {
+//   if (guessNumber < favoriteNumber) {
+//     alert('Your guess is too low.');
+//   } else if (guessNumber > favoriteNumber) {
+//     alert('Your guess is too high.');
+//   } else {
+//     alert('You got it!');
+//     break;
+//   }
+//   guessNumber = prompt('What is my favorite number, 1 - 50');
+// }
+// if (guessNumber !== favoriteNumber) {
+//   alert('You guessed too many times. The answer is 22.');
 // }
 
-let guessNumber = prompt('What is my favorite number, 1 - 50?');
-let favoriteNumber = '22';
+let statesLivedIn = prompt('Guess a state that I have lived in previously.');
+let answersStatesLivedIn = ['alaska', 'north carolina', 'georgia', 'new york', 'maryland', 'south carolina'];
 
-for (let i = 1; i < 5; i++) {
-  if (guessNumber < favoriteNumber) {
-    alert('Your guess is too low.');
-  } else if (guessNumber > favoriteNumber) {
-    alert('Your guess is too high.');
-  } else {
-    alert('You got it!');
+
+for (let i = 1; i < answersStatesLivedIn.length; i++) {
+  if (statesLivedIn.toLowerCase() === answersStatesLivedIn) {
+    alert('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
     break;
+  } else {
+    alert('That is not a state I have lived in.');
   }
-  guessNumber = prompt('What is my favorite number, 1 - 50');
+  statesLivedIn = prompt('Guess a state that I have lived in previously.');
 }
-if (guessNumber !== favoriteNumber) {
-  alert('You guessed too many times.');
+if (statesLivedIn !== answersStatesLivedIn) {
+  alert('You have exceeded your guesses, I have previously lived in the following states: Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
 }
+
