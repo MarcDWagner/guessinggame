@@ -90,23 +90,23 @@ console.log('app is running');
 // }
 
 // Guess my favorite number loop
-// let guessNumber = prompt('What is my favorite number, 1 - 50?');
-// let favoriteNumber = '22';
+let guessNumber = prompt('What is my favorite number, 1 - 50?');
+let favoriteNumber = '22';
 
-// for (let i = 1; i < 4; i++) {
-//   if (guessNumber < favoriteNumber) {
-//     alert('Your guess is too low.');
-//   } else if (guessNumber > favoriteNumber) {
-//     alert('Your guess is too high.');
-//   } else {
-//     alert('You got it!');
-//     break;
-//   }
-//   guessNumber = prompt('What is my favorite number, 1 - 50');
-// }
-// if (guessNumber !== favoriteNumber) {
-//   alert('You guessed too many times. The answer is 22.');
-// }
+for (let i = 1; i < 4; i++) {
+  if (guessNumber < favoriteNumber) {
+    alert('Your guess is too low.');
+  } else if (guessNumber > favoriteNumber) {
+    alert('Your guess is too high.');
+  } else {
+    alert('You got it!');
+    break;
+  }
+  guessNumber = prompt('What is my favorite number, 1 - 50');
+}
+if (guessNumber !== favoriteNumber) {
+  alert('You guessed too many times. The answer is 22.');
+}
 
 // Guess states I've lived in loop
 // let numberOfGuesses = 6;
