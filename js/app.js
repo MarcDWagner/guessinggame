@@ -2,6 +2,10 @@
 
 console.log('app is running');
 
+// This let statement will let me add correct answers as I go through code by using correctAnswers++;
+// let correctAnswers = 0;
+
+// User name
 let user = prompt('What is your name?');
 console.log(user);
 alert('Welcome: ' + user );
@@ -10,6 +14,7 @@ if (user === null) {
   user = prompt('No, really what is your name?');
 }
 
+// Best military branch question
 let bestBranch = prompt('The Army is the best branch, right?');
 bestBranch = bestBranch.toLowerCase();
 
@@ -24,6 +29,7 @@ default:
   alert('Let me help, of course it is!');
 }
 
+// Favorite actor question
 let amazingActor = prompt('Was Heath Ledger\'s Joker one of the best acting performances ever?');
 amazingActor = amazingActor.toLowerCase();
 
@@ -38,6 +44,7 @@ default:
   alert('E for effort.');
 }
 
+// Travel location question
 let travelCroatia = prompt('Have you ever been to Croatia?');
 travelCroatia = travelCroatia.toLowerCase();
 
@@ -52,6 +59,7 @@ default:
   alert('You should go sometime.');
 }
 
+// Arizona lightening question
 let arizonaLightening = prompt('Does Arizona have the best lightening storms?');
 arizonaLightening = arizonaLightening.toLowerCase();
 
@@ -66,6 +74,7 @@ default:
   alert('Come on now.');
 }
 
+// Best pet question
 let bestPet = prompt('Bunnies are the best pet.');
 bestPet = bestPet.toLowerCase();
 
@@ -80,7 +89,7 @@ default:
   alert('Wasn\'t really asking.');
 }
 
-
+// Guess my favorite number loop
 let guessNumber = prompt('What is my favorite number, 1 - 50?');
 let favoriteNumber = '22';
 
@@ -99,9 +108,10 @@ if (guessNumber !== favoriteNumber) {
   alert('You guessed too many times. The answer is 22.');
 }
 
+// Guess states I've lived in loop
 let statesLivedIn = prompt('Guess a state that I have lived in previously.');
 let answersStatesLivedIn = ['alaska', 'north carolina', 'georgia', 'new york', 'maryland', 'south carolina'];
-answersStatesLivedIn =statesLivedIn.toLowerCase();
+answersStatesLivedIn = statesLivedIn.toLowerCase();
 
 for (let i = 0; i < 6; i++) {
   if (statesLivedIn === answersStatesLivedIn) {
