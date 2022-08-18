@@ -2,6 +2,19 @@
 
 console.log('app is running');
 
+function askQuestionWithAnswer(q,a) {
+  let response = prompt(q);
+  if (response.toLowerCase() === a.toLowerCase()) {
+    return 'Winner!';
+  } 
+  else {
+    return 'Loser!';
+  }
+}
+
+let isCorrect = askQuestionWithAnswer('What is my name?' , 'Marc');
+alert(isCorrect);
+
 // This let statement will let me add correct answers as I go through code by using correctAnswers++;
 // let correctAnswers = 0;
 
