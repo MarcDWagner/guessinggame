@@ -6,13 +6,13 @@ console.log('app is running');
 // let correctAnswers = 0;
 
 // User name
-let user = prompt('What is your name?');
-console.log(user);
-alert('Welcome: ' + user);
-if (user === null) {
-  alert('You need to provide your name.');
-  user = prompt('No, really what is your name?');
-}
+// let user = prompt('What is your name?');
+// console.log(user);
+// alert('Welcome: ' + user);
+// if (user === null) {
+//   alert('You need to provide your name.');
+//   user = prompt('No, really what is your name?');
+// }
 
 // // Best military branch question
 // let bestBranch = prompt('The Army is the best branch, right?');
@@ -109,22 +109,22 @@ if (user === null) {
 // }
 // Guess States I've lived in
 let statesLivedIn = prompt('Guess a state that I have lived in previously.');
-let answersStatesLivedIn = ['alaska', 'north carolina', 'georgia', 'new york', 'maryland', 'south carolina'];
+let answersStatesLivedIn = ['Alaska', 'North Carolina', 'Georgia', 'New york', 'Maryland', 'South Carolina'];
+
 // Create boolean let statements and add into loop
-for (let i = 0; i < statesLivedIn; i++) {
-  let response = prompt(statesLivedIn);
-  for (let answer of answersStatesLivedIn[i]) {
-    if (response.toLowerCase() === answer) {
-      alert('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+for (let i = 0; i < 5; i++) {
+  while (statesLivedIn === answersStatesLivedIn) {
+    if (statesLivedIn.toLowerCase() === answersStatesLivedIn[i]) {
+      console.log('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
       break;
     } else {
       alert('That is not a state I have lived in.');
     }
     statesLivedIn = prompt('Guess a state that I have lived in previously.');
-  }
-  if (i === 6) {
-    alert('You have exceeded your guess, all states I have previously lived in are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
-    break;
+    if (i === 5) {
+      alert('You have exceeded your guess, all states I have previously lived in are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+      break;
+    }
   }
 }
 
