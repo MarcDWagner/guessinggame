@@ -125,6 +125,7 @@ for (let i = 0; i < statesLivedIn; i++) {
   if (i === 6) {
     alert('You have exceeded your guess, all states I have previously lived in are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
     break;
+  }
 }
 
 
