@@ -108,25 +108,34 @@ console.log('app is running');
 //   alert('You guessed too many times. The answer is 22.');
 // }
 // Guess States I've lived in
-// let statesLivedIn = prompt('Guess a state that I have lived in previously.');
-// let answersStatesLivedIn = ['Alaska', 'North Carolina', 'Georgia', 'New york', 'Maryland', 'South Carolina'];
+let stateGuesses = 6;
+let statesLivedIn = prompt('Guess a state that I have lived in previously.');
+let answersStatesLivedIn = ['Alaska', 'North Carolina', 'Georgia', 'New york', 'Maryland', 'South Carolina'];
+let isStatesLivedIn = false;
+// Create boolean let statements and add into loop
+while (stateGuesses > 0) {
+  for (let state of answersStatesLivedIn) {
+    // console.log(state);
+    if (statesLivedIn.toLowerCase() === state.toLowerCase()) {
+      isStatesLivedIn = true;
+    }
+  }
+  if (isStatesLivedIn === true) {
+    alert('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+    break;
+  }
+  if (isStatesLivedIn === false) {
+    alert('That is not a state I have lived in.');
+  }
+  stateGuesses++;
+  // if (stateGuesses === 6) {
+  //   alert('You have exceeded your guesses, all states I have previously lived in are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
+  //   break;
+  // }
+}
+statesLivedIn = prompt('Guess a state that I have lived in previously.');
 
-// // Create boolean let statements and add into loop
-// for (let i = 0; i < 5; i++) {
-//   while (statesLivedIn === answersStatesLivedIn) {
-//     if (statesLivedIn.toLowerCase() === answersStatesLivedIn[i]) {
-//       console.log('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
-//       break;
-//     } else {
-//       alert('That is not a state I have lived in.');
-//     }
-//     statesLivedIn = prompt('Guess a state that I have lived in previously.');
-//     if (i === 5) {
-//       alert('You have exceeded your guess, all states I have previously lived in are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
-//       break;
-//     }
-//   }
-// }
+
 
 
 
@@ -154,12 +163,11 @@ console.log('app is running');
 //   }if (i === 5) {break; }
 // }
 // warm up, pushing a string into an array at a specific position
-
-function add2Array (string, number) {
-  let ourArray = [];
-  ourArray[number] = string;
-  return ourArray;
-}
-let response = add2Array('test',2);
-console.log(response);
+// function add2Array (string, number) {
+//   let ourArray = [];
+//   ourArray[number] = string;
+//   return ourArray;
+// }
+// let response = add2Array('test',2);
+// console.log(response);
 
