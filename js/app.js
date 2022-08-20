@@ -108,30 +108,27 @@ console.log('app is running');
 //   alert('You guessed too many times. The answer is 22.');
 // }
 // Guess States I've lived in
-let stateGuesses = 6;
-let statesLivedIn = prompt('Guess a state that I have lived in previously.');
+let numberGuesses = 6;
 let answersStatesLivedIn = ['Alaska', 'North Carolina', 'Georgia', 'New york', 'Maryland', 'South Carolina'];
+let statesLivedIn = prompt('Guess a state that I have lived in previously.');
 let isStatesLivedIn = false;
-// Create boolean let statements and add into loop
-while (stateGuesses > 0) {
+while (numberGuesses > 0) {
   for (let state of answersStatesLivedIn) {
-    // console.log(state);
     if (statesLivedIn.toLowerCase() === state.toLowerCase()) {
       isStatesLivedIn = true;
     }
+    if (isStatesLivedIn === false); {
+      alert('That is not a state I have lived in.');
+    }
+    if (isStatesLivedIn === true) {
+      alert('That is correct!  All states I have lived in are: ' + answersStatesLivedIn + '.');
+      break;
+    }
+    numberGuesses -= 1;
+    if (numberGuesses === 0) {
+      alert('You have exceeded your guesses, all states I have previously lived in are: ' + answersStatesLivedIn + '.');
+    }
   }
-  if (isStatesLivedIn === true) {
-    alert('That is correct!  All states are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
-    break;
-  }
-  if (isStatesLivedIn === false) {
-    alert('That is not a state I have lived in.');
-  }
-  stateGuesses++;
-  // if (stateGuesses === 6) {
-  //   alert('You have exceeded your guesses, all states I have previously lived in are Alaska, North Carolina, South Carolina, Georgia, New York and Maryland.');
-  //   break;
-  // }
 }
 statesLivedIn = prompt('Guess a state that I have lived in previously.');
 
