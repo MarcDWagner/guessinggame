@@ -138,28 +138,28 @@ console.log('app is running');
 
 
 // for loop with all questions and answers in array
-let questionsYesNo = [
-  'The Army is the best branch, right?',
-  'Was Heath Ledger\'s Joker one of the best acting performances ever?',
-  'Is Croatia a great vacation spot?',
-  'Does Arizona have the best lightening storms?',
-  'Are bunnies are the best pet?'
-];
-let answersYesNo = [
-  'yes',
-  'yes',
-  'yes',
-  'yes',
-  'yes'
-];
-for (let i = 0; i < questionsYesNo.length; i++) {
-  let response = prompt(questionsYesNo[i]);
-  if (response.toLowerCase() === answersYesNo[i]) {
-    alert('Got it!');
-  } else {
-    alert('Incorrect.');
-  }if (i === 5) {break; }
-}
+// let questionsYesNo = [
+//   'The Army is the best branch, right?',
+//   'Was Heath Ledger\'s Joker one of the best acting performances ever?',
+//   'Is Croatia a great vacation spot?',
+//   'Does Arizona have the best lightening storms?',
+//   'Are bunnies are the best pet?'
+// ];
+// let answersYesNo = [
+//   'yes',
+//   'yes',
+//   'yes',
+//   'yes',
+//   'yes'
+// ];
+// for (let i = 0; i < questionsYesNo.length; i++) {
+//   let response = prompt(questionsYesNo[i]);
+//   if (response.toLowerCase() === answersYesNo[i]) {
+//     alert('Got it!');
+//   } else {
+//     alert('Incorrect.');
+//   }if (i === 5) {break; }
+// }
 // warm up, pushing a string into an array at a specific position
 // function add2Array (string, number) {
 //   let ourArray = [];
