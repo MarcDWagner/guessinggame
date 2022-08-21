@@ -1,5 +1,41 @@
-body {background-color: lightblue;}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body {
+    background-color: lightblue;
+}
 
 h1 {
+    color:rgb(217, 185, 3)
+
+}
+
+section {
+    display: block;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.about-me {
+    border: thin solid black;
+}
+
+.job-experience {
+    border: thin solid red;
+}
+
+.top-ten {
+    border: thin solid yellow;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
     
+}
+
+footer {
+    border: thin solid purple;
+    margin: 10px;
+
+
 }
