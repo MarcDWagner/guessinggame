@@ -90,23 +90,23 @@ if (user === null) {
 // }
 
 // Guess my favorite number loop
-let guessNumber = prompt('What is my favorite number, 1 - 50?');
-let favoriteNumber = '22';
+// let guessNumber = prompt('What is my favorite number, 1 - 50?');
+// let favoriteNumber = '22';
 
-for (let i = 1; i < 4; i++) {
-  if (guessNumber < favoriteNumber) {
-    alert('Your guess is too low.');
-  } else if (guessNumber > favoriteNumber) {
-    alert('Your guess is too high.');
-  } else {
-    alert('You got it!');
-    break;
-  }
-  guessNumber = prompt('What is my favorite number, 1 - 50');
-}
-if (guessNumber !== favoriteNumber) {
-  alert('You guessed too many times. The answer is 22.');
-}
+// for (let i = 1; i < 4; i++) {
+//   if (guessNumber < favoriteNumber) {
+//     alert('Your guess is too low.');
+//   } else if (guessNumber > favoriteNumber) {
+//     alert('Your guess is too high.');
+//   } else {
+//     alert('You got it!');
+//     break;
+//   }
+//   guessNumber = prompt('What is my favorite number, 1 - 50');
+// }
+// if (guessNumber !== favoriteNumber) {
+//   alert('You guessed too many times. The answer is 22.');
+// }
 
 // Guess States I've lived in
 // let numberGuesses = 6;
@@ -119,7 +119,7 @@ if (guessNumber !== favoriteNumber) {
 //     if (statesLivedIn.toLowerCase() === state.toLowerCase()) {
 //       isStatesLivedIn = true;
 //     }
-//     if (isStatesLivedIn === false); {
+//     else if (isStatesLivedIn === false); {
 //       alert('That is not a state I have lived in.');
 //     }
 //     if (isStatesLivedIn === true) {
@@ -139,32 +139,51 @@ if (guessNumber !== favoriteNumber) {
 
 
 // for loop with all questions and answers in array
-let questionsYesNo = [
-  'The Army is the best branch, right?',
-  'Was Heath Ledger\'s Joker one of the best acting performances ever?',
-  'Is Croatia a great vacation spot?',
-  'Does Arizona have the best lightening storms?',
-  'Are bunnies are the best pet?'
-];
-let answersYesNo = [
-  'yes',
-  'yes',
-  'yes',
-  'yes',
-  'yes'
-];
-for (let i = 0; i < questionsYesNo.length; i++) {
-  let response = prompt(questionsYesNo[i]);
-  if (response.toLowerCase() === answersYesNo[i]) {
-    alert('Got it!');
-  } else {
-    alert('Incorrect.');
-  }if (i === 5) {break; }
-}
+// let questionsYesNo = [
+//   'The Army is the best branch, right?',
+//   'Was Heath Ledger\'s Joker one of the best acting performances ever?',
+//   'Is Croatia a great vacation spot?',
+//   'Does Arizona have the best lightening storms?',
+//   'Are bunnies are the best pet?'
+// ];
+// let answersYesNo = [
+//   'yes',
+//   'yes',
+//   'yes',
+//   'yes',
+//   'yes'
+// ];
+// for (let i = 0; i < questionsYesNo.length; i++) {
+//   let response = prompt(questionsYesNo[i]);
+//   if (response.toLowerCase() === answersYesNo[i]) {
+//     alert('Got it!');
+//   } else {
+//     alert('Incorrect.');
+//   }if (i === 5) {break; }
+// }
 // warm up, pushing a string into an array at a specific position
 // function add2Array (string, number) {
 //   let ourArray = [];
 //   ourArray[number] = string;
 //   return ourArray;
 // }
+
+let numberGuesses = 6;
+let answersStatesLivedIn = ['alaska', 'north carolina', 'georgia', 'new york', 'maryland', 'south carolina'];
+let statesLivedIn = prompt('Guess a state that I have lived in previously.').toLowerCase();
+for (let i = 0; i < answersStatesLivedIn[i]; i++) {
+  if (statesLivedIn.toLowerCase() === answersStatesLivedIn[i]()) {
+    alert('That is correct!  All states I have lived in are: ' + answersStatesLivedIn + '.');
+    break;
+  } else {
+    alert('That is not a state I have lived in.');
+  }
+  // statesLivedIn = prompt('Guess a state that I have lived in previously.');
+  // }
+  numberGuesses -= 1;
+  if (numberGuesses === 0) {
+    alert('You have exceeded your guesses, all states I have previously lived in are: ' + answersStatesLivedIn + '.');
+    break;
+  }
+}
 
